@@ -6,7 +6,7 @@ function selectChapt(){
   livestreamer "hlsvariant://http://vod.hls.http.13.ztreaming.com/13vod/_definst_/mp4:13vod/streaming.13.cl/public_html/2017/"$1"/"$2"/kosem_2017"$1$2"_capitulo.mp4/playlist.m3u8" best -p vlc
   fi
 }
-function selectCosem(){
+function selectKosem(){
 clear
 case $1 in
   1)  echo "
@@ -182,5 +182,5 @@ echo "[1] - Kosem / 2017"
 read tv_show
 while true
 do
-selectCosem $tv_show
+selectKosem $tv_show
 done
