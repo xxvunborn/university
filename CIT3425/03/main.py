@@ -8,7 +8,13 @@ def sell():
 
     item = raw_input("What item you want to sell: ")
     contact= raw_input("Contact me at: ")
-    payload = ">>>>>Selling:" + item + " Contact:" + contact
+
+    if len(item) < 8:
+        while len(item) < 7:
+            item+=" "
+
+    payload = ">>>>>>Selling:" + item + " Contact:" + contact
+
 
     package = ip/udp/payload
     send(package)
