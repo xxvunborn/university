@@ -1,0 +1,5 @@
+Dependences:
+  https://github.com/secdev/scapy
+  git clone
+  cd $home/scapy/
+  sudo python main.py install
